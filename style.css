@@ -1,12 +1,12 @@
 h1{
   font-weight: bold;
   font-size: 3.61rem;
-  color: #FFF;
+  color: rgba(255, 255, 255, 1);
 }
 
 p {
   font-size: 1.38rem;
-  color: #FFF
+  color: rgba(255, 255, 255, 1)
 }
 
 body {
@@ -20,12 +20,12 @@ ul{
 }
 
 ul li .heading{
-  color: #FFF;
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
   font-variant: small-caps;
 }
 ul li a.item{
-  color: #CCC;
+  color: rgba(204, 204, 204, 1);
   text-decoration: none;
   font-weight: lighter;
 }
@@ -36,7 +36,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 0 110px;
-  background-color: #282828;
+  background-color: rgba(40, 40, 40, 1);
 }
 
 input{
@@ -77,6 +77,41 @@ input[type=checkbox]:checked ~ .subitem {
    display: block;
 }
 
+input[type=checkbox]:checked ~ ul.mobilenavcontainer {
+   display: flex;
+}
+
+input[type=checkbox]:checked ~ .mobilemenucontainer {
+   opacity: 0;
+}
+
+input[type=checkbox]:checked ~ a.mobiletoplogo {
+   opacity: 0;
+}
+
+.closebutton{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closebutton label{
+  cursor: pointer;
+  padding: 20px;
+  color: rgba(204, 204, 204, 1);
+  font-size: 40px;
+}
+
+.mobilenavitem a{
+  font-size: 40px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.mobilenavitem{
+  padding-bottom: 40px;
+}
+
 .plus{
   cursor: pointer;
   display: none;
@@ -96,11 +131,20 @@ input[type=checkbox]:checked ~ .subitem {
 }
 
 .mobilenavcontainer{
+  flex-direction: column;
+  justify-content: flex-start;
   display: none;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: rgba(40, 40, 40, 0.95);
 }
 
 .mobiletoplogo{
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
@@ -108,8 +152,16 @@ input[type=checkbox]:checked ~ .subitem {
   margin-left: 16px;
 }
 
+.mobiletoplogoboxed{
+  color: rgba(204, 204, 204, 1);
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .navcontainer li a{
-    color: #FFF;
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
     font-size: .9375rem;
     cursor: pointer;
@@ -118,16 +170,17 @@ input[type=checkbox]:checked ~ .subitem {
 }
 
 .mobilemenucontainer li a{
-    color: #FFF;
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
     font-size: .9375rem;
     cursor: pointer;
     line-height: 1em;
     padding: 8px 16px 9px;
+    z-index: 100;
 }
 
 .toplogo{
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
@@ -140,7 +193,7 @@ input[type=checkbox]:checked ~ .subitem {
 }
 
 .bdrbtn{
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 1);;
   border-radius: 5px;
 }
 
@@ -193,7 +246,7 @@ input[type=checkbox]:checked ~ .subitem {
 }
 
 .bottomlogo{
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
