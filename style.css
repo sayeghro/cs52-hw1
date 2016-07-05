@@ -19,7 +19,7 @@ ul{
   list-style-type: none;
 }
 
-ul li a.heading{
+ul li .heading{
   color: #FFF;
   text-decoration: none;
   font-variant: small-caps;
@@ -67,6 +67,14 @@ button{
   text-decoration: none;
   font-size: 14px;
 
+}
+
+input[type=checkbox] {
+   display: none;
+}
+
+input[type=checkbox]:checked ~ .subitem {
+   display: block;
 }
 
 .plus{
@@ -138,6 +146,7 @@ button{
 .cover {
   background-image: linear-gradient(to bottom,rgba(40,40,40, 0.4), rgba(40, 40, 40, 0.8)), url(img/bg.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .navcontainer{
@@ -256,9 +265,7 @@ button{
   }
 
   .linklistitem ul li.subitem{
-    opacity: 0;
-    height: 0;
-    padding: 0;
+    display: none;
   }
   .linklistitem ul li{
     padding: 0;
