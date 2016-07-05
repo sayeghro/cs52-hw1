@@ -1,0 +1,282 @@
+h1{
+  font-weight: bold;
+  font-size: 3.61rem;
+  color: #FFF;
+}
+
+p {
+  font-size: 1.38rem;
+  color: #FFF
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul li a.heading{
+  color: #FFF;
+  text-decoration: none;
+  font-variant: small-caps;
+}
+ul li a.item{
+  color: #CCC;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 110px;
+  background-color: #282828;
+}
+
+input{
+  width: 240px;
+  height: 50px;
+  border-color: rgba(197, 197, 197, 1);
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  padding: 12px;
+  line-height: 48px;
+}
+
+button{
+  height: 50px;
+  width: 184px;
+  background-color: rgba(86, 182, 139, 1);
+  border-radius: 5px;
+  border: 1px solid rgba(86, 182, 139, 1);
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+
+.plus{
+  display: none;
+}
+
+.linklistitem ul li{
+  padding-top: 15px;
+}
+
+.mobilenavoutercontainer{
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.mobilenavcontainer{
+  display: none;
+}
+
+.mobiletoplogo{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.navcontainer li a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: .9375rem;
+    cursor: pointer;
+    line-height: 1em;
+    padding: 8px 16px 9px;
+}
+
+.mobilemenucontainer li a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: .9375rem;
+    cursor: pointer;
+    line-height: 1em;
+    padding: 8px 16px 9px;
+}
+
+.toplogo{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.navitem{
+  text-align: center;
+}
+
+.bdrbtn{
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.cover {
+  background-image: linear-gradient(to bottom,rgba(40,40,40, 0.4), rgba(40, 40, 40, 0.8)), url(img/bg.jpg);
+  background-size: cover;
+}
+
+.navcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.firstrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.maincontainer{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:686px;
+}
+
+.mainitem{
+  text-align: center;
+}
+
+.linklistcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 100px 0 100px;
+  border-top: 1px solid rgba(40, 40, 40, 1);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.linklistitem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomlogo{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.fancybox{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.inputflexcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 440px;
+  margin-bottom: 0px;
+}
+
+.fancyitem{
+  text-align: center;
+}
+
+.fancysubitem{
+  text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .fancybox{
+    width: 100%;
+    border-radius: 0px;
+    padding-bottom: 0px;
+
+  }
+  .inputflexcontainer{
+    height: 120px;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 90%;
+  }
+  .fancysubitem{
+    width: 100%;
+  }
+  .maincontainer{
+    height: auto;
+  }
+  #desktopnav{
+    display: none;
+  }
+  .mobilenavoutercontainer{
+    display: inline-block;
+  }
+  .mobilenavoutercontainer{
+    display: flex;
+  }
+
+  .linklistcontainer{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .linklistitem ul li.subitem{
+    opacity: 0;
+    height: 0;
+    padding: 0;
+  }
+
+  .linklistitem ul{
+    border-bottom: 1px solid rgba(40, 40, 40, 1);
+    width: 100%;
+  }
+
+  .linklistitem{
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .plus{
+    display: inline-block;
+  }
+
+   footer{
+     padding: 0 10px;
+   }
+
+}
