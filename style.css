@@ -71,6 +71,7 @@ button{
 
 .plus{
   display: none;
+  padding-right: 20px !important;
 }
 
 .linklistitem ul li{
@@ -178,7 +179,6 @@ button{
 .linklistitem{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -260,19 +260,24 @@ button{
     height: 0;
     padding: 0;
   }
+  .linklistitem ul li{
+    padding: 0;
+  }
 
-  .linklistitem ul{
+  .linklistitem{
     border-bottom: 1px solid rgba(40, 40, 40, 1);
-    width: 100%;
   }
 
   .linklistitem{
     box-sizing: border-box;
-    width: 100%;
   }
 
   .plus{
     display: inline-block;
+  }
+
+  .maincontainer h1, p{
+    padding: 0 20px;
   }
 
    footer{
